@@ -35,7 +35,7 @@ class Rozetka(unittest.TestCase):
         driver.find_element_by_name("email").send_keys("test0000@test.ua")
         driver.find_element_by_name("password").clear()
         driver.find_element_by_name("password").send_keys("pa$$word")
-        #driver.find_element_by_css_selector("button.button-css-green").click()
+        driver.find_element_by_css_selector("button.button-css-green").click()
         driver = self.driver
         driver.get(self.base_url + "/")
         driver.find_element_by_css_selector(u"img[alt=\"Интернет магазин Rozetka.ua - Украина едина и неделима!\"]").click()
